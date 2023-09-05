@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\JiITELEC1C.props" />
+</Project>

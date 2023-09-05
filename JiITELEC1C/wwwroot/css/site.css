@@ -1,0 +1,239 @@
+html {
+    font-size: 16px;
+    font-family: 'Public Sans', sans-serif;
+}
+@media (min-width: 768px) {
+    html {
+        font-size: 18px;
+    }
+    
+}
+@media (max-width: 576px) {
+    html {
+        font-size: 15px;
+    }
+}
+html {
+    position: relative;
+    min-height: 100%;
+}
+body {
+    margin-bottom: 60px;
+    background-color: #FFE7D8; /*#FFF5EC*/
+}
+h1 {
+    color: #681A1A;
+    font-weight: 900;
+}
+.contentImg {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+}
+.circleImg {
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*NAVBAR*/
+.navbar {
+    background-color: #681A1A;
+    color: white;
+    z-index: 9;
+}
+.navbar-brand {
+    margin-left: 10px;
+    font-weight: 700;
+}
+.navImg {
+    height: 50px;
+    object-fit: contain;
+}
+.navbar-collapse {
+    margin-right: 10px;
+}
+.nav-link {
+    padding-top: 6px;
+    text-align: end;
+    font-weight: 700;
+}
+/*HOME*/
+.homeText {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-shadow: 0px 0px 20px #FFE7D8;
+}
+.homeheader {
+    font-size: 100px;
+    margin-bottom: 0;
+}
+.dateTimeText {
+    color: #681A1A;
+    font-weight: 600;
+}
+.bgImg {
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    position: relative;
+}
+.BG-Land {
+    width: 100vw;
+    position: absolute;
+    bottom: 6%;
+    right: 0;
+}
+.BG-Clouds1 {
+    width: 26vw;
+    position: absolute;
+    top: 12%;
+    left: 0;
+}
+.BG-Clouds2 {
+    width: 28.6vw;
+    position: absolute;
+    top: 12%;
+    right: 0;
+}
+/*PRIVACY*/
+.privacyText {
+    font-size: 48px;
+}
+/*ABOUT*/
+.circleFrame {
+    width: 350px;
+    height: 350px;
+    margin: auto;
+    background-color: #681A1A;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.circleShape {
+    width: 330px;
+    height: 330px;
+    margin: auto;
+    background-color: #7F7F7F;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.socmeds {
+    color: #681A1A;
+    justify-content: center;
+    align-items: center;
+}
+.fbIcon {
+    font-size: 3.5rem;
+}
+.circle {
+    width: 60px;
+    height: 60px;
+    margin: auto;
+    background-color: #681A1A;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.emailIcon {
+    color: #FFE7D8; /*#FFF5EC*/
+    font-size: 2rem;
+}
+.description {
+    margin: 30px;
+    margin-top: 0;
+    line-height: 2.0;
+}
+@media screen and (max-width: 768px) {
+    .circleFrame {
+        width: 300px;
+        height: 300px;
+    }
+    .circleShape {
+        width: 280px;
+        height: 280px;
+    }
+    .homeheader {
+        font-size: 85px;
+    }
+}
+@media screen and (max-width: 576px) {
+    .circleFrame {
+        width: 280px;
+        height: 280px;
+    }
+    .circleShape {
+        width: 260px;
+        height: 260px;
+    }
+    .homeheader {
+        font-size: 70px;
+    }
+}
+/*BG IMAGE*/
+@media screen and (max-width: 1920px) {
+    .BG-Land {
+        width: 1920px;
+    }
+    .BG-Clouds1 {
+        width: 500px;
+    }
+    .BG-Clouds2 {
+        width: 550px;
+    }
+}
+@media screen and (max-width: 1557px) {
+    .BG-Land {
+        width: 123vw;
+    }
+    .BG-Clouds1 {
+        width: 32vw;
+    }
+    .BG-Clouds2 {
+        width: 35vw;
+    }
+}
+@media screen and (max-width: 1232px) {
+    .BG-Land {
+        width: 1517px;
+    }
+    .BG-Clouds1 {
+        width: 394.23px;
+    }
+    .BG-Clouds2 {
+        width: 431.2px;
+    }
+}
+@media screen and (max-width: 871px) {
+    .BG-Land {
+        width: 174vw;
+    }
+    .BG-Clouds1 {
+        width: 45vw;
+    }
+    .BG-Clouds2 {
+        width: 49vw;
+    }
+}
+/*1300px 320px 300px*/
+@media screen and (max-width: 747px) {
+    .BG-Land {
+        width: 1300px;
+    }
+}
+@media screen and (max-width: 709px) {
+    .BG-Clouds1 {
+        width: 320px;
+    }
+}
+@media screen and (max-width: 606px) {
+    .BG-Clouds2 {
+        width: 295px;
+    }
+}

@@ -1,0 +1,43 @@
+﻿@{
+    ViewData["Title"] = "About";
+}
+@{
+    var fbName = "Ira Rayzel Ji";
+    string[] emails = {"irarayzel.ji.cics@ust.edu.ph", "irarayzelji@gmail.com"};
+    var age = 20;
+}
+<div class="container">
+<div style="padding-top:30px; padding-bottom:10px;">
+  <div class="circleFrame">
+    <div class="circleShape">
+        <img src="~/Ira_Pic.jpg" alt="Picture" class="text-center contentImg circleImg">
+    </div>
+  </div>
+</div>
+<h1 class="text-center">Ira Rayzel S. Ji</h1>
+<p class="text-center description">
+    I’m a 3rd Year student at the University of Santo Tomas, studying Bachelor of Science in 
+    Information Technology, majoring in Web and Mobile App Development. I'm 20 years old, and 
+    I live in Tondo, Manila. I am a diligent, reliable, ambitious, and creative person. I always 
+    strive to achieve the best version of myself, and never gives up in the middle of challenges. 
+    I have the enthusiasm and ability to learn new things quickly. I enjoy drawing, handicrafts, 
+    video and photo editing, layouting, and designing. I can also speak four languages: English, 
+    Filipino, Mandarin, and Hokkien.
+</p>
+<div class="container align-items-center justify-content-center socmeds">
+    <div class="row justify-content-center">
+        <div class="col-md-6 col-sm-5 text-center" style="padding-bottom: 1rem;">
+            <div><i class="fa-brands fa-facebook fbIcon"></i></div>
+            @fbName
+        </div>
+        <div class="col-md-6 col-sm-5 text-center">
+            <div class="circle"><i class="fa-solid fa-envelope emailIcon"></i></div>
+            @{
+                foreach (var item in emails) {
+                            <div>@item</div>;
+                }
+            }
+        </div>
+    </div>
+</div>
+</div>
