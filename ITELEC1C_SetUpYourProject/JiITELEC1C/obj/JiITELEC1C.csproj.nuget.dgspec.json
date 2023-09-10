@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Ira\\Documents\\Coding Projects\\Visual Studio 2022\\JiITELEC1C\\JiITELEC1C\\JiITELEC1C.csproj": {}
+    "C:\\Users\\Ira\\Documents\\CodingProjects\\Visual Studio 2022\\ITELEC1C_SetUpYourProject\\JiITELEC1C\\JiITELEC1C.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Ira\\Documents\\Coding Projects\\Visual Studio 2022\\JiITELEC1C\\JiITELEC1C\\JiITELEC1C.csproj": {
+    "C:\\Users\\Ira\\Documents\\CodingProjects\\Visual Studio 2022\\ITELEC1C_SetUpYourProject\\JiITELEC1C\\JiITELEC1C.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Ira\\Documents\\Coding Projects\\Visual Studio 2022\\JiITELEC1C\\JiITELEC1C\\JiITELEC1C.csproj",
+        "projectUniqueName": "C:\\Users\\Ira\\Documents\\CodingProjects\\Visual Studio 2022\\ITELEC1C_SetUpYourProject\\JiITELEC1C\\JiITELEC1C.csproj",
         "projectName": "JiITELEC1C",
-        "projectPath": "C:\\Users\\Ira\\Documents\\Coding Projects\\Visual Studio 2022\\JiITELEC1C\\JiITELEC1C\\JiITELEC1C.csproj",
+        "projectPath": "C:\\Users\\Ira\\Documents\\CodingProjects\\Visual Studio 2022\\ITELEC1C_SetUpYourProject\\JiITELEC1C\\JiITELEC1C.csproj",
         "packagesPath": "C:\\Users\\Ira\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Ira\\Documents\\Coding Projects\\Visual Studio 2022\\JiITELEC1C\\JiITELEC1C\\obj\\",
+        "outputPath": "C:\\Users\\Ira\\Documents\\CodingProjects\\Visual Studio 2022\\ITELEC1C_SetUpYourProject\\JiITELEC1C\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Ira\\AppData\\Roaming\\NuGet\\NuGet.Config",
