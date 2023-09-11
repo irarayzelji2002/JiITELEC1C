@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\ITELEC1C_LabActivity1.props" />
+</Project>
