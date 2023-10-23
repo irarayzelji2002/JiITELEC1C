@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\ITELEC1C_LabActivity3.props" />
+</Project>

@@ -1,0 +1,38 @@
+﻿@model Student;
+
+<div class="text-center" style="margin:2rem;">
+    <h1 class="display-4">Student Details</h1>
+</div>
+<table border="1" class="table table-light">
+    <tr>
+        <th>Id</th>
+        <td>@Model.Id</td>
+    </tr>
+    <tr>
+        <th>Last Name</th>
+        <td>@Model.LastName</td>
+    </tr>
+    <tr>
+        <th>First Name</th>
+        <td>@Model.FirstName</td>
+    </tr>
+    <tr>
+        <th>Course</th>
+        <td>@Model.Course</td>
+    </tr>
+    <tr>
+        <th>Email</th>
+        <td>@Model.Email</td>
+    </tr>
+    <tr>
+        <th>Admission Date</th>
+        <td>@Model.AdmissionDate</td>
+    </tr>
+    <tr>
+        <th>GPA</th>
+        <td>@Model.GPA</td>
+    </tr>
+</table>
+<div class="text-center">
+    <a asp-area="" asp-controller="Student" asp-action="Index" class="btn btn-primary" style="padding-left:1rem; padding-right:1rem; margin:1rem;">Back To Student List</a>
+</div>
