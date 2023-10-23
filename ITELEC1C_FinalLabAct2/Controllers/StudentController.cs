@@ -1,6 +1,5 @@
 ﻿using ITELEC1C_FinalLabAct2.Data;
 using ITELEC1C_FinalLabAct2.Models;
-using ITELEC1C_FinalLabAct2.Services;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
@@ -93,9 +92,10 @@ namespace ITELEC1C_FinalLabAct2.Controllers
             if (student != null)
             {
                 StudentList.Remove(student);
+                _dbContext.SaveChanges();
+                return RedirectToAction("Index"); //View("Index", StudentList);
             }
-            _dbContext.SaveChanges();
-            return RedirectToAction("Index"); //View("Index", StudentList);
+            return NotFound();
         }
     }
 }

@@ -1,11 +1,8 @@
 using ITELEC1C_FinalLabAct2.Data;
-using ITELEC1C_FinalLabAct2.Services;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
-builder.Services.AddSingleton<IMyFakeDataService, MyFakeDataService>();
 builder.Services.AddControllersWithViews();
 // Database Connection Service
 builder.Services.AddDbContext<AppDbContext>(
