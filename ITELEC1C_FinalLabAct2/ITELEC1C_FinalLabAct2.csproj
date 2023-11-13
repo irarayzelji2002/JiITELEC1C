@@ -18,6 +18,7 @@
     </PackageReference>
   </ItemGroup>
 
+<<<<<<< HEAD
   <ItemGroup>
     <Compile Update="Properties\Resources.Designer.cs">
       <DesignTime>True</DesignTime>
@@ -33,4 +34,6 @@
     </EmbeddedResource>
   </ItemGroup>
 
+=======
+>>>>>>> 415a5c28324aca49abf8a6a22541d2ba0b2c35a2
 </Project>

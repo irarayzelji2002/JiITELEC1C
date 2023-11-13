@@ -1,8 +1,14 @@
 {
   "version": 2,
+<<<<<<< HEAD
   "dgSpecHash": "v3WF3DISRWyqixI5j6pu+IP6Iloq4Sung7frJIqufPBCny6IWLbXBqGmYG8aKFD1FRrp1SOMZidFBt6cHf7+Pg==",
   "success": true,
   "projectFilePath": "C:\\Users\\Ira\\Documents\\CodingProjects\\Visual Studio 2022\\LabActivities\\ITELEC1C_LabActivity3\\ITELEC1C_LabActivity3.csproj",
+=======
+  "dgSpecHash": "4mjrbokCuOElVp7GybIYoEqug+8N1fvZUvDbj7WbYGYZiomOa9qe3LlNsoNUjVjVcffnsOCvG8aROam1ILHl9g==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Ira\\Documents\\CodingProjects\\Visual Studio 2022\\ITELEC1C_LabActivity3\\ITELEC1C_LabActivity3.csproj",
+>>>>>>> 415a5c28324aca49abf8a6a22541d2ba0b2c35a2
   "expectedPackageFiles": [],
   "logs": []
 }

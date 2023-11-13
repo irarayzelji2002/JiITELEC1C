@@ -28,6 +28,7 @@ C:\Users\Ira\Documents\CodingProjects\Visual Studio 2022\ITELEC1C_LabActivity1\o
 C:\Users\Ira\Documents\CodingProjects\Visual Studio 2022\ITELEC1C_LabActivity1\obj\Debug\net6.0\ITELEC1C_LabActivity1.pdb
 C:\Users\Ira\Documents\CodingProjects\Visual Studio 2022\ITELEC1C_LabActivity1\obj\Debug\net6.0\ITELEC1C_LabActivity1.genruntimeconfig.cache
 C:\Users\Ira\Documents\CodingProjects\Visual Studio 2022\ITELEC1C_LabActivity1\obj\Debug\net6.0\ref\ITELEC1C_LabActivity1.dll
+<<<<<<< HEAD
 C:\Users\Ira\Documents\CodingProjects\Visual Studio 2022\LabActivities\ITELEC1C_LabActivity1\bin\Debug\net6.0\appsettings.Development.json
 C:\Users\Ira\Documents\CodingProjects\Visual Studio 2022\LabActivities\ITELEC1C_LabActivity1\bin\Debug\net6.0\appsettings.json
 C:\Users\Ira\Documents\CodingProjects\Visual Studio 2022\LabActivities\ITELEC1C_LabActivity1\bin\Debug\net6.0\ITELEC1C_LabActivity1.staticwebassets.runtime.json
@@ -58,3 +59,5 @@ C:\Users\Ira\Documents\CodingProjects\Visual Studio 2022\LabActivities\ITELEC1C_
 C:\Users\Ira\Documents\CodingProjects\Visual Studio 2022\LabActivities\ITELEC1C_LabActivity1\obj\Debug\net6.0\ITELEC1C_LabActivity1.pdb
 C:\Users\Ira\Documents\CodingProjects\Visual Studio 2022\LabActivities\ITELEC1C_LabActivity1\obj\Debug\net6.0\ITELEC1C_LabActivity1.genruntimeconfig.cache
 C:\Users\Ira\Documents\CodingProjects\Visual Studio 2022\LabActivities\ITELEC1C_LabActivity1\obj\Debug\net6.0\ref\ITELEC1C_LabActivity1.dll
+=======
+>>>>>>> 415a5c28324aca49abf8a6a22541d2ba0b2c35a2

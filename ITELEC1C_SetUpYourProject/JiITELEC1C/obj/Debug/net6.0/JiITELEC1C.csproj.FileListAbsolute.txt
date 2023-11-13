@@ -28,6 +28,7 @@ C:\Users\Ira\Documents\Coding Projects\Visual Studio 2022\JiITELEC1C\JiITELEC1C\
 C:\Users\Ira\Documents\Coding Projects\Visual Studio 2022\JiITELEC1C\JiITELEC1C\obj\Debug\net6.0\JiITELEC1C.pdb
 C:\Users\Ira\Documents\Coding Projects\Visual Studio 2022\JiITELEC1C\JiITELEC1C\obj\Debug\net6.0\JiITELEC1C.genruntimeconfig.cache
 C:\Users\Ira\Documents\Coding Projects\Visual Studio 2022\JiITELEC1C\JiITELEC1C\obj\Debug\net6.0\ref\JiITELEC1C.dll
+<<<<<<< HEAD
 C:\Users\Ira\Documents\CodingProjects\Visual Studio 2022\LabActivities\ITELEC1C_SetUpYourProject\JiITELEC1C\bin\Debug\net6.0\appsettings.Development.json
 C:\Users\Ira\Documents\CodingProjects\Visual Studio 2022\LabActivities\ITELEC1C_SetUpYourProject\JiITELEC1C\bin\Debug\net6.0\appsettings.json
 C:\Users\Ira\Documents\CodingProjects\Visual Studio 2022\LabActivities\ITELEC1C_SetUpYourProject\JiITELEC1C\bin\Debug\net6.0\JiITELEC1C.staticwebassets.runtime.json
@@ -58,3 +59,5 @@ C:\Users\Ira\Documents\CodingProjects\Visual Studio 2022\LabActivities\ITELEC1C_
 C:\Users\Ira\Documents\CodingProjects\Visual Studio 2022\LabActivities\ITELEC1C_SetUpYourProject\JiITELEC1C\obj\Debug\net6.0\JiITELEC1C.pdb
 C:\Users\Ira\Documents\CodingProjects\Visual Studio 2022\LabActivities\ITELEC1C_SetUpYourProject\JiITELEC1C\obj\Debug\net6.0\JiITELEC1C.genruntimeconfig.cache
 C:\Users\Ira\Documents\CodingProjects\Visual Studio 2022\LabActivities\ITELEC1C_SetUpYourProject\JiITELEC1C\obj\Debug\net6.0\ref\JiITELEC1C.dll
+=======
+>>>>>>> 415a5c28324aca49abf8a6a22541d2ba0b2c35a2

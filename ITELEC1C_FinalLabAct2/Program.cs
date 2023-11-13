@@ -7,7 +7,11 @@ builder.Services.AddControllersWithViews();
 // Database Connection Service
 builder.Services.AddDbContext<AppDbContext>(
     options => options.UseSqlServer(builder.Configuration.GetConnectionString("MyConnectionString"))
+<<<<<<< HEAD
     //options => options.UseSqlServer("Server = DESKTOP-MR73GR0\\SQLEXPRESS; Database = ITELEC1C_FinalLabAct2_Ji; Trusted_connection = True; Encrypt = False")
+=======
+    //options => options.UseSqlServer("Server = DESKTOP-MR73GR0\\SQLEXPRESS; Database = ITEELC1C_FinalLabAct2_Ji; Trusted_connection = True; Encrypt = False")
+>>>>>>> 415a5c28324aca49abf8a6a22541d2ba0b2c35a2
     );
 
 var app = builder.Build();
