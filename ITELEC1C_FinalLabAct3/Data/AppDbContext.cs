@@ -57,7 +57,7 @@ namespace ITELEC1C_FinalLabAct3.Data
                     IsTenured = true,
                     Rank = Rank.Instructor,
                     HiringDate = DateTime.Parse("2022-09-30"),
-                    Phone = "32-8559-3600"
+                    Phone = "63-8559-3600"
                 },
                 new Instructor()
                 {
@@ -67,7 +67,7 @@ namespace ITELEC1C_FinalLabAct3.Data
                     IsTenured = false,
                     Rank = Rank.AssistantProfessor,
                     HiringDate = DateTime.Parse("2022-05-15"),
-                    Phone = "32-8559-3600"
+                    Phone = "63-8559-3600"
                 },
                 new Instructor()
                 {
@@ -77,7 +77,7 @@ namespace ITELEC1C_FinalLabAct3.Data
                     IsTenured = true,
                     Rank = Rank.AssociateProfessor,
                     HiringDate = DateTime.Parse("2022-03-30"),
-                    Phone = "32-8559-3600"
+                    Phone = "63-8559-3600"
                 },
                 new Instructor()
                 {
@@ -87,7 +87,7 @@ namespace ITELEC1C_FinalLabAct3.Data
                     IsTenured = false,
                     Rank = Rank.Professor,
                     HiringDate = DateTime.Parse("2022-11-10"),
-                    Phone = "32-8559-3600"
+                    Phone = "63-8559-3600"
                 }
             );
         }

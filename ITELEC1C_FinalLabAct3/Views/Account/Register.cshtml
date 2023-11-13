@@ -4,38 +4,45 @@
     @* <div class="form-group" asp-validation-summary="All"></div> *@
     <div class="form-group">
         <label asp-for="Username"></label>
+        <span class="text-danger">*</span>
+        <input asp-for="Username" type="text" class="form-control">
         <span asp-validation-for="Username" class="text-danger"></span>
-        <input asp-for="Username">
     </div>
     <div class="form-group">
         <label asp-for="Password"></label>
+        <span class="text-danger">*</span>
+        <span class="text-secondary" style="font-size:14px; margin-left:10px;"> 1 uppercase, lowercase, digit, symbol, minimum length of 8</span>
+        <input asp-for="Password" type="password" class="form-control">
         <span asp-validation-for="Password" class="text-danger"></span>
-        <input asp-for="Password">
     </div>
     <div class="form-group">
         <label asp-for="ConfirmPassword"></label>
+        <span class="text-danger">*</span>
+        <input asp-for="ConfirmPassword" type="password" class="form-control">
         <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
-        <input asp-for="ConfirmPassword">
-    </div>
-    <div class="form-group">
-        <label asp-for="FirstName"></label>
-        <span asp-validation-for="FirstName" class="text-danger"></span>
-        <input asp-for="FirstName">
-    </div>
-    <div class="form-group">
-        <label asp-for="LastName"></label>
-        <span asp-validation-for="LastName" class="text-danger"></span>
-        <input asp-for="LastName">
     </div>
     <div class="form-group">
         <label asp-for="Email"></label>
+        <span class="text-danger">*</span>
+        <input asp-for="Email" type="text" class="form-control">
         <span asp-validation-for="Email" class="text-danger"></span>
-        <input asp-for="Email">
+    </div>
+    <div class="form-group">
+        <label asp-for="FirstName"></label>
+        <input asp-for="FirstName" type="text" class="form-control">
+        <span asp-validation-for="FirstName" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="LastName"></label>
+        <input asp-for="LastName" type="text" class="form-control">
+        <span asp-validation-for="LastName" class="text-danger"></span>
     </div>
     <div class="form-group">
         <label asp-for="Phone"></label>
+        <span class="text-secondary" style="font-size:14px; margin-left:10px;"> XXX - XXX - XXXX format</span>
+        <input asp-for="Phone" type="text" class="form-control">
         <span asp-validation-for="Phone" class="text-danger"></span>
-        <input asp-for="Phone">
+        <span class="text-danger" id="spanErr">@Html.ValidationMessage("regErr")</span>
     </div>
 
     <input type="submit" value="Register Account" class="btn btn-primary" />

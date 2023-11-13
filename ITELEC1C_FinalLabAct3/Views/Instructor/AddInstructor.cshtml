@@ -11,21 +11,25 @@
     -->
     <div class="form-group">
         <label asp-for="FirstName"></label>
+        <span class="text-danger">*</span>
         <input asp-for="FirstName" type="text" class="form-control">
         <span asp-validation-for="FirstName" class="text-danger"></span>
     </div>
     <div class="form-group">
         <label asp-for="LastName"></label>
+        <span class="text-danger">*</span>
         <input asp-for="LastName" type="text" class="form-control">
         <span asp-validation-for="LastName" class="text-danger"></span>
     </div>
     <div class="form-group">
         <label asp-for="Rank">Rank</label>
+        <span class="text-danger">*</span>
         <select asp-for="Rank" asp-items="Html.GetEnumSelectList(typeof(Rank))" class="form-control"></select>
         <span asp-validation-for="Rank" class="text-danger"></span>
     </div>
     <div class="form-group">
         <label asp-for="IsTenured"></label>
+        <span class="text-danger">*</span>
         <select asp-for="IsTenured" class="form-control">
             <option value="false">Probationary</option>
             <option value="true">Permanent</option>
@@ -34,11 +38,13 @@
     </div>
     <div class="form-group">
         <label asp-for="HiringDate"></label>
+        <span class="text-danger">*</span>
         <input asp-for="HiringDate" type="date" class="form-control">
         <span asp-validation-for="HiringDate" class="text-danger"></span>
     </div>
     <div class="form-group">
         <label asp-for="Phone"></label>
+        <span class="text-danger">*</span>
         <input asp-for="Phone" type="text" class="form-control">
         <span asp-validation-for="Phone" class="text-danger"></span>
     </div>

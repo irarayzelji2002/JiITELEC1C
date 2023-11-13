@@ -29,13 +29,18 @@ namespace ITELEC1C_FinalLabAct3.Controllers
         [HttpPost]
         public async Task<IActionResult> Login(LoginViewModel loginInfo)
         {
-            var result = await _signInManager.PasswordSignInAsync(loginInfo.Username, loginInfo.Password, loginInfo.RememberMe, false);
-            if (result.Succeeded)
+            if (ModelState.IsValid)
             {
-                return RedirectToAction("Index", "Instructor");
-            }
-            else {
-                ModelState.AddModelError("", "Failed to Login");
+                var result = await _signInManager.PasswordSignInAsync(loginInfo.Username, loginInfo.Password, loginInfo.RememberMe, false);
+                if (result.Succeeded)
+                {
+                    return RedirectToAction("Index", "Instructor");
+                }
+                else
+                {
+                    ModelState.AddModelError("loginErr", "Username or password is incorrect");
+                }
+                return View(loginInfo);
             }
             return View(loginInfo);
         }
@@ -73,7 +78,7 @@ namespace ITELEC1C_FinalLabAct3.Controllers
                 else 
                 {
                     foreach (var error in result.Errors) { 
-                        ModelState.AddModelError("", error.Description);
+                        ModelState.AddModelError("regErr", error.Description);
                     }
                 }
             }
