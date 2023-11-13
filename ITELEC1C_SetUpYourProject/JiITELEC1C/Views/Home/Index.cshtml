@@ -1,0 +1,34 @@
+﻿@{
+    ViewData["Title"] = "Home";
+}
+@{
+    DateTime date = DateTime.Now;
+}
+<div class="BGImg">
+    <img src="~/BG-Clouds1.png" class="BG-Clouds1">
+    <img src="~/BG-Clouds2.png" class="BG-Clouds2">
+    <img src="~/BG-Land.png" class="BG-Land">
+</div>
+<div class="text-center homeText">
+    <h1 class="homeheader">Welcome</h1>
+    @{
+        //<img src="~/BG-Land.png" class="contentImg BG-Land">
+        //<p>@DateTime.Now</p>
+        if (DateTime.Now.Hour < 6) //12:00AM - 5:59AM
+        {
+            <h5 class="dateTimeText">It is evening on @date.ToString("dddd, d, MMMM.")</h5>
+        }
+        else if (DateTime.Now.Hour < 12) //6:00AM - 11:59AM
+        {
+            <h5 class="dateTimeText">It is morning on @date.ToString("dddd, d, MMMM.")</h5>
+        }
+        else if (date.Hour < 18) //12:00PM - 5:59PM
+        {
+            <h5 class="dateTimeText">It is afternoon on @date.ToString("dddd, d, MMMM.")</h5>
+        }
+        else //6:00PM - 11:59PM
+        {
+            <h5 class="dateTimeText">It is evening on @date.ToString("dddd, d, MMMM.")</h5>
+        }
+    }
+</div>

@@ -1,0 +1,41 @@
+html {
+    font-size: 14px;
+    font-family: 'Public Sans', sans-serif;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin-bottom: 60px;
+}
+td {
+    padding-right: 2rem;
+}
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+h3 {
+    padding-top: 2rem;
+}
+a:link {
+    text-decoration: none;
+}
+a:visited {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none;
+}
+a:active {
+    text-decoration: none;
+}

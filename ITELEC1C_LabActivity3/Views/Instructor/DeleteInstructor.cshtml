@@ -1,0 +1,74 @@
+﻿@model Instructor;
+
+<div class="text-center" style="margin:2rem;">
+    <h1 class="display-6">Are you sure you want to delete @Model.FirstName @Model.LastName?</h1>
+</div>
+
+<table border="1" class="table table-light">
+    <tr>
+        <th>Id</th>
+        <td>@Model.Id</td>
+    </tr>
+    <tr>
+        <th>Last Name</th>
+        <td>@Model.LastName</td>
+    </tr>
+    <tr>
+        <th>First Name</th>
+        <td>@Model.FirstName</td>
+    </tr>
+    <tr>
+        <th>Rank</th>
+        <td>
+            @{
+                var rank = "";
+                if (Model.Rank.ToString() == "AssistantProfessor") { rank = "Assistant Professor"; }
+                else if (Model.Rank.ToString() == "AssociateProfessor") { rank = "Associate Professor"; }
+                else { rank = Model.Rank.ToString(); }
+            }
+            @rank
+        </td>
+    </tr>
+    <tr>
+        <th>Status</th>
+        <td>
+            @{
+                var status = "";
+                if (Model.IsTenured == true) { status = "Permanent"; }
+                else { status = "Probationary"; }
+            }
+            @status
+        </td>
+    </tr>
+    <tr>
+        <th>Hiring Date</th>
+        <td>@Model.HiringDate</td>
+    </tr>
+</table>
+<div class="text-center">
+    <button type="submit" class="btn btn-danger" style="margin-top:20px;" data-toggle="modal" data-target="#exampleModal">Delete</button>
+    <button type="button" onclick="history.back()" class="btn btn-secondary" style="margin-top:20px;" asp-action="Index">Cancel</button>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <form action="" method="post">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Delete</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                Are you sure you want to delete @Model.FirstName @Model.LastName?
+            </div>
+            <div class="modal-footer">
+                <button type="submit" class="btn btn-danger">Yes</button>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">No</button>
+            </div>
+        </div>
+    </div>
+    </form>
+</div>

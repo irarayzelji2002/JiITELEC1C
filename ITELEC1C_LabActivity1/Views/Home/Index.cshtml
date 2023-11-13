@@ -1,0 +1,13 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center" style="margin:2rem;">
+    <h1 class="display-4">Welcome</h1>
+    <button class="btn btn-info" style="border-radius:1.5rem; padding-left:1rem; padding-right:1rem; margin:1rem;">
+        <a asp-area="" asp-controller="Student" asp-action="Index" style="color:black;">See Student List</a>
+    </button>
+    <button class="btn btn-info" style="border-radius:1.5rem; padding-left:1rem; padding-right:1rem; margin:1rem;">
+        <a asp-area="" asp-controller="Instructor" asp-action="Index" style="color:black;">See Instructor List</a>
+    </button>
+</div>

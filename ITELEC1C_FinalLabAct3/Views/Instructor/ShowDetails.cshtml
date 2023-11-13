@@ -1,0 +1,53 @@
+﻿@model Instructor;
+
+<div class="text-center" style="margin:2rem;">
+    <h1 class="display-4">Instructor Details</h1>
+</div>
+<table border="1" class="table table-light">
+    <tr>
+        <th>Id</th>
+        <td>@Model.Id</td>
+    </tr>
+    <tr>
+        <th>Last Name</th>
+        <td>@Model.LastName</td>
+    </tr>
+    <tr>
+        <th>First Name</th>
+        <td>@Model.FirstName</td>
+    </tr>
+    <tr>
+        <th>Rank</th>
+        <td>
+            @{
+                var rank = "";
+                if (Model.Rank.ToString() == "AssistantProfessor") { rank = "Assistant Professor"; }
+                else if (Model.Rank.ToString() == "AssociateProfessor") { rank = "Associate Professor"; }
+                else { rank = Model.Rank.ToString(); }
+            }
+            @rank
+        </td>
+    </tr>
+    <tr>
+        <th>Status</th>
+        <td>
+            @{
+                var status="";
+                if (Model.IsTenured == true) { status = "Permanent"; }
+                else { status = "Probationary"; }
+            }
+            @status
+        </td>
+    </tr>
+    <tr>
+        <th>Hiring Date</th>
+        <td>@Model.HiringDate</td>
+    </tr>
+    <tr>
+        <th>Phone</th>
+        <td>@Model.Phone</td>
+    </tr>
+</table>
+<div class="text-center">
+    <a asp-area="" asp-controller="Instructor" asp-action="Index" class="btn btn-primary" style="padding-left:1rem; padding-right:1rem; margin:1rem;">Back To Instructor List</a>
+</div>

@@ -1,0 +1,49 @@
+﻿@{
+    ViewData["Title"] = "Instructors";
+}
+@model IEnumerable<Instructor>;
+<div class="text-center" style="margin:2rem;">
+    <h1 class="display-4">Instructor List</h1>
+</div>
+<div class="text-center">
+    <a class="btn btn-primary" asp-action="AddInstructor" style="margin-bottom:20px;">Add Instructor</a>
+</div>
+<table border="1" class="table table-light">
+    <tr class="text-center">
+        <td>Name</td>
+        <td>Rank</td>
+        <td>Status</td>
+        <td>Hiring Date</td>
+        <td colspan="3">Details</td>
+    </tr>
+    @foreach (var instructor in Model)
+    {
+        <tr>
+            <td>@instructor.FirstName @instructor.LastName</td>
+            <td>
+                @{
+                    var rank = "";
+                    if (@instructor.Rank.ToString() == "AssistantProfessor") { rank = "Assistant Professor"; }
+                    else if (@instructor.Rank.ToString() == "AssociateProfessor") { rank = "Associate Professor"; }
+                    else { rank = @instructor.Rank.ToString(); }
+                }
+                @rank
+            </td>
+            <td>
+                @{
+                    var status = "";
+                    if (@instructor.IsTenured == true) { status = "Permanent"; }
+                    else { status = "Probationary"; }
+                }
+                @status
+            </td>
+            <td>@instructor.HiringDate</td>
+            <td><a asp-action="ShowDetails" class="btn btn-primary" asp-route-id="@instructor.Id">Show Details</a></td>
+            <td><a asp-action="EditInstructor" class="btn btn-primary" asp-route-id="@instructor.Id">Edit</a></td>
+            <td><a asp-action="DeleteInstructor" class="btn btn-danger" asp-route-id="@instructor.Id">Delete</a></td>
+        </tr>
+    }
+</table>
+<div class="text-center">
+    <a asp-area="" asp-controller="Home" asp-action="Index" class="btn btn-primary" style="padding-left:1rem; padding-right:1rem; margin:1rem;">Back To Home</a>
+</div>
